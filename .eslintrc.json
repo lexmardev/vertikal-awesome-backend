@@ -1,0 +1,37 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["google", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "new-cap": "off",
+    "camelcase": "warn",
+    "no-console": "warn",
+    "no-dupe-keys": "error",
+    "no-else-return": "off",
+    "no-empty": "error",
+    "no-eq-null": "warn",
+    "no-extra-boolean-cast": "error",
+    "no-extra-semi": "error",
+    "no-invalid-this": "warn",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-param-reassign": "warn",
+    "no-redeclare": "error",
+    "no-underscore-dangle": "off",
+    "no-unreachable": "error",
+    "no-unused-vars": "warn",
+    "no-use-before-define": "error",
+    "no-useless-constructor": "error",
+    "no-useless-escape": "error",
+    "object-shorthand": "error",
+    "require-jsdoc": "off",
+    "use-isnan": "error",
+    "prefer-promise-reject-errors": "error"
+  }
+}

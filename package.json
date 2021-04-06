@@ -1,0 +1,51 @@
+{
+  "name": "vertikal-awesome-backend",
+  "version": "1.0.0",
+  "description": "A simple awesome backend",
+  "main": "server/init.js",
+  "scripts": {
+    "dev": "nodemon server/init",
+    "prod": "cross-env NODE_ENV=production node server/init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexmardev93/vertikal-awesome-backend.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "Mongoose",
+    "MongoDB"
+  ],
+  "author": "Alexander Omar Leiva Arévalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexmardev93/vertikal-awesome-backend/issues"
+  },
+  "homepage": "https://github.com/lexmardev93/vertikal-awesome-backend#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "joi": "^17.4.0",
+    "jwt-simple": "^0.5.6",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "winston": "^3.3.3",
+    "yenv": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}
