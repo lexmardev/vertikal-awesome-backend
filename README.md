@@ -1,6 +1,6 @@
 # Un simple pero impresionante backend
 
-Aplicación construida con Node.js, Express.js, Mongoose y otros más.
+Aplicación construida con Node.js, Express.js, MongoDB Atlas, Mongoose y otros más.
 
 Clona el repositorio con el siguiente comando.
 
@@ -41,6 +41,12 @@ copia y pega el enlace.
 
 ```
 https://documenter.getpostman.com/view/11389055/Tz5jefpF
+```
+
+Para utilizar la app desplegada en **Heroku** reemplaza la url de los endpoint documentados en postman por la siguiente:
+
+```
+https://vertikal-awesome-backend.herokuapp.com/api/login
 ```
 
 **Gracias por usar la aplicación**
