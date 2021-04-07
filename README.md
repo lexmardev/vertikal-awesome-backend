@@ -54,4 +54,4 @@ https://vertikal-awesome-backend.herokuapp.com/api/login
 Happy hacking!
 
 > Nota: Este es un backend sencillo, todo esto se puede volver más robusto, utilizando Typescript, arquitectura
-> hexagonal con clean code, POO, pruebas de estrés con Locust y mucho más.
+> hexagonal con clean code, pruebas de estrés con Locust y mucho más.
