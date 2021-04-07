@@ -47,7 +47,7 @@ router.post(
 
     if (result) {
       if (await bcrypt.compare(user.password, result.password)) {
-        const token = await jwt.sign({ payload: { _id: result._id } });
+        const token = await jwt.encode({ _id: result._id });
         return response.request(200, 'User logged in successfully', { token }, res);
       }
     }

@@ -7,7 +7,7 @@ const encode = (payload = {}) =>
     try {
       const data = {
         iat: moment().unix(),
-        exp: moment().add(10, 'seconds').unix(),
+        exp: moment().add(env.TOKEN.TIMEOUT, env.TOKEN.UNITS).unix(),
         payload,
       };
       const encoded = jwt.encode(data, env.TOKEN.SECRET_KEY, 'HS256');
