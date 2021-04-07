@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon server/init",
     "prod": "cross-env NODE_ENV=production node server/init.js",
-    "start": "npm run prod"
+    "start": "node server/init.js"
   },
   "repository": {
     "type": "git",

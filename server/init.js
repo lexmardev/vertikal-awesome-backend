@@ -4,13 +4,15 @@ const routes = require('./routes/index.routes');
 const env = require('./core/helpers/yenv.helper');
 const winston = require('./core/helpers/winston.helper');
 
+const port = process.env.PORT || env.SERVER.PORT;
+
 db.connect()
   .then(() => {
     winston.console.info('CONNECTED', { origin: 'Database' });
     try {
       routes.setRoutes(app);
-      app.listen(env.SERVER.PORT, () => {
-        winston.console.info(`Server listening on port: ${env.SERVER.PORT}`, { origin: 'Express' });
+      app.listen(port, () => {
+        winston.console.info(`Server listening on port: ${port}`, { origin: 'Express' });
       });
     } catch (error) {
       winston.console.error(error.message, { origin: 'Express' });
